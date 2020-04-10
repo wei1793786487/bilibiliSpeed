@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "哔哩哔哩加速",
+  "version": "1.1.0",
+  "description": "多倍加速，嗖嗖的。",
+  "icons": {
+    "16": "img/icon.png",
+    "48": "img/icon.png",
+    "128": "img/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.bilibili.com/*"],
+      "js": ["js/ext.js"]
+    }
+  ],
+  "permissions": ["tabs", "https://www.bilibili.com/*"],
+  "homepage_url": "https://www.bilibili.com/",
+  "default_locale": "zh_CN"
+}
